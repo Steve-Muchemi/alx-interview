@@ -3,10 +3,11 @@
 
 
 def minOperations(n):
-    """ Calculates the least number of operations needed to achiev n 'H' characters
+    """ Calculates the least number of operations
+    needed to achiev n 'H' characters
 
-    Args: 
-    n (int): the number passed 
+    Args:
+    n (int): the number passed
     Returns:
     int: least number of operations
     """
@@ -20,5 +21,5 @@ def minOperations(n):
             number = number / divisor
         else:
             divisor = divisor + 1
-            
+
     return operations
