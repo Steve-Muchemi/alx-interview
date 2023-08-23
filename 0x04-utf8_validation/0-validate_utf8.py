@@ -13,8 +13,12 @@ def validUTF8(data: List[int]) -> bool:
     Args: data - the list of ints to check
     """
     points = 0
+    bi = []
 
     for byte in data:
+        bi.append(byte & 0xFF)
+
+    for byte in bi:
 
         if points == 0:
             if byte >> 3 == 0b11110:
