@@ -2,12 +2,10 @@
 """Rotates a 2D matrix 90 degrees clockwise."""
 
 
-import copy
-
-
 def rotate_2d_matrix(matrix):
     """ Rotates a 2 d matrix"""
-    temp = copy.deepcopy(matrix)
+    temp = []
+
     k = 0
     v = 0
     i = -1
@@ -15,6 +13,13 @@ def rotate_2d_matrix(matrix):
 
     matrix_len = len(matrix)
     matrix_inner_len = len(matrix[0])
+
+    # creating temp matrix
+    for m in range(matrix_len):
+        row = []
+        for x in range(matrix_inner_len):
+            row.append(matrix[m][x])
+        temp.append(row)
 
     for _ in range(matrix_len):
         for _ in range(matrix_inner_len):
