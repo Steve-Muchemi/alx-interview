@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """ make change module"""
 
+
 def makeChange(coins, total):
+    """ make change function"""
     if total <= 0:
         return 0
 
