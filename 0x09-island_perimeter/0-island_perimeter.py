@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""module contains perimeter functoin"""
+
+
 def island_perimeter(grid):
+    """ measures perimeter of a function"""
     if not grid:
         return 0
 
