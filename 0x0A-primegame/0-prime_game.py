@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-
+""" documentation for prime game"""
 
 def is_prime(num):
+    """ checks if num is prime"""
     if num < 2:
         return False
     for i in range(2, int(num**0.5) + 1):
@@ -11,6 +12,7 @@ def is_prime(num):
 
 
 def isWinner(x, nums):
+    """ is winner function"""
     maria_wins = 0
     ben_wins = 0
 
